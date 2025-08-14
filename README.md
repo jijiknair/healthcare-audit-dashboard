@@ -17,30 +17,15 @@ This project implements a **real-time monitoring dashboard** for healthcare comp
 
 ## Project Structure
 
-healthcare-audit-dashboard/
-│
-├── dashboard/               # Main Django app for views, models, and API endpoints
-│   ├── migrations/           # Database migrations
-│   ├── static/               # CSS, JavaScript, images
-│   │   ├── css/
-│   │   ├── js/
-│   │   └── images/
-│   ├── templates/            # HTML templates
-│   │   └── dashboard/
-│   ├── admin.py               # Admin panel configuration
-│   ├── apps.py                # App configuration
-│   ├── models.py              # Database models
-│   ├── urls.py                # URL routing for the dashboard
-│   ├── views.py               # View functions and API endpoints
-│   └── tests.py               # Unit tests
-│
-├── healthcare_audit/         # Django project configuration (settings, URLs, WSGI)
-│   ├── __init__.py
-│   ├── settings.py
-│   ├── urls.py
-│   ├── wsgi.py
-│   └── asgi.py
-│
-├── requirements.txt          # Python dependencies
-├── manage.py                  # Django management script
-└── README.md                  # Project documentation
+### **Folder/Component Details**
+
+- **dashboard/** – Core application handling the healthcare compliance dashboard logic, views, and templates.
+- **static/** – Contains all static front-end assets (CSS, JavaScript, images).
+- **templates/** – Holds the HTML templates used to render the pages.
+- **migrations/** – Database migration files for keeping schema changes in sync.
+- **models.py** – Defines the database structure (tables, fields, relationships).
+- **views.py** – Controls what data is shown and which templates are used.
+- **urls.py** – Maps URLs to the corresponding views.
+- **settings.py** – Project-wide configuration (databases, installed apps, middleware).
+- **requirements.txt** – Lists all required Python packages for easy installation.
+
